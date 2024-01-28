@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-
-for i in range(10):
-    for j in range(i + 1, 10):
-        if i == 8:
-            print("{}{}".format(i, j))
+for pos1 in range(0, 9):
+    for pos2 in range(pos1 + 1, 10):
+        if pos1 < 8:
+            print("{}{}, ".format(pos1, pos2), end="")
         else:
-            print("{}{}".format(i, j), end=", ")
+            print("{}{}".format(pos1, pos2))
